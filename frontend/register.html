@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CorpPort: Επικοινωνία</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1fcca392fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/">Αρχική</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">Η ιστορία μας</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contact.html">Επικοινωνία</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#loginModal">
+                Σύνδεση - Εγγραφή
+            </button> -->
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-4">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 border-left">
+                    <h1 class="display-4">Εγγραφή Νέου Χρήστη</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Registration form-->
+    <div class="container comp-present p-3">
+        <h3 class="text-center">Εγγραφή Νέου Χρήστη</h3>
+        <hr class="light">
+        <div id='reg-form'>
+        </div>
+        <div class="p-3">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fName">Όνομα</label>
+                    <input type="text" name="firstName" class="form-control" placeholder="Όνομα" id="fName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lName">Επώνυμο</label>
+                    <input type="text" name="lastName" class="form-control" placeholder="Επώνυμο" id="lName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="reg-username">Username</label>
+                    <input type="text" name="username" class="form-control" placeholder="Username" id="reg-username">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου</label>
+                    <input type="mail" name="email" class="form-control" placeholder="e-mail" id="email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="reg-pass">Κωδικός Πρόσβασης</label>
+                    <div class="input-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password" id="reg-pass">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <a href='#' class="text-dark" id="icon-click">
+                                    <i class="fas fa-eye" id="icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="reg-pass">Επανάληψη Κωδικού Πρόσβασης</label>
+                    <div class="input-group">
+                        <input type="password" name="repass" class="form-control" placeholder="Type Password Again" id="reg-repass">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <a href='#' class="text-dark" id="icon-click">
+                                    <i class="fas fa-eye" id="icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-secondary align-items-center">Εγγραφή</button>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by YourBUSCompany</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts space-->
+    <script src="script/register-button.js"></script>
+
+
+</body>

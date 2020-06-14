@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #222;
+    font-weight: 300;
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand img {
+    height: 100px;
+}
+
+.navbar li {
+    padding-right: 15px;
+}
+
+.hr-half {
+    width: 50%;
+}
+
+.jumbotron {
+    background-image: url("../img/back.jpg");
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    color: white;
+}
+
+.headline {
+    font-weight: 300;
+}
+
+.card-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.card-title {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.card-subtitle {
+    font-weight: 300;
+    color: #cccddd;
+}
+
+.card-light {
+    font-size: 0.9em;
+}
+
+.card {
+    background-color: #678241;
+}
+
+.user-hello {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.social-icons {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.customer-bar {
+    margin-top: 0px;
+    margin-bottom: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.customer-bar ul {
+    list-style-type: none;
+}
+
+.customer-bar a {
+    color: white;
+}
+
+.customer-bar icon {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.modal-header {
+    background-color: #678241;
+    color: white;
+}
+
+.service-card hr {
+    border-color: inherit;
+}
+
+.service-card-icon {
+    font-size: 50px;
+    color: inherit;
+}
+
+.service-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.service-card:hover {
+    background-color: #678241;
+    color: white;
+}
+
+.go-vert {
+    margin: auto;
+    height: 50%;
+}
+
+
+/*---Media Queries --*/
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+.custom-range::-webkit-slider-thumb {
+    background: #678241;
+}
+
+.custom-range::-moz-range-thumb {
+    background: #678241;
+}
+
+.custom-range::-ms-thumb {
+    background: #678241;
+}

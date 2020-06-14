@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CorpPort: Αρχική</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="script/checkAuth.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1fcca392fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index_when_login.html"><img src="/img/logo.png" alt="Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index_when_login.html">Αρχική</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Ανακοινώσεις</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="routes.html">Δρομολόγια</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nearme.html">Στάσεις Κοντά μου</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-logout" style="color: grey">
+                            Αποσύνδεση
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Modal for login-->
+
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-4">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 border-left">
+                    <h1 class="display-4">CorpPort</h1>
+                    <p class="lead">Η μεταφορά στην πόλη μας, όπως θα έπρεπε να είναι.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-4 text-center go-vert">
+                <h3 class="headline">Υπηρεσίες για<br>τους χρήστες</h1>
+            </div>
+            <div class="col-md-8 p-3 border-left ">
+                <div class="container">
+                    <div class="row p-3">
+                        <div class="col-5 service-card text-center p-3">
+                            <a href="nearme.html">
+                                <div>
+                                    <div class="service-card-icon">
+                                        <i class="fas fa-search-location"></i>
+                                    </div>
+                                    <hr>
+                                    <div class="service-card-text">
+                                        Στάσεις Κοντά μου
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-5 service-card text-center">
+                            <a href="routes.html">
+                                <div class="service-card-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <hr>
+                                <div class="service-card-text">
+                                    Διαδρομές
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row p-3">
+                        <div class="col-5 service-card text-center p-3">
+                            <a href="news.html">
+                                <div>
+                                    <div class="service-card-icon">
+                                        <i class="fas fa-newspaper"></i>
+                                    </div>
+                                    <hr>
+                                    <div class="service-card-text">
+                                        Πρόσφατες Ανακοινώσεις
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-5 service-card text-center">
+                            <a href="#">
+                                <div class="service-card-icon">
+                                    <i class="far fa-id-card"></i>
+                                </div>
+                                <hr>
+                                <div class="service-card-text">
+                                    Αλλαγή Ρυθμίσεων Χρήστη
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by CorpPort</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts space-->
+    <script src="script/logout-button.js"></script>
+
+
+</body>

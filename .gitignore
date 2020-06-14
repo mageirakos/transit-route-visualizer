@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+mongo-volume/ 
+old_frontend/
+random/
+

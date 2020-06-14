@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CorpPort: Επικοινωνία</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1fcca392fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/">Αρχική</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">Η ιστορία μας</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Επικοινωνία</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#loginModal">
+                Σύνδεση - Εγγραφή
+            </button>
+        </div>
+    </nav>
+
+
+
+    <!-- Welcome Jumbotron-->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-4">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 border-left">
+                    <h1 class="display-4">Επικοινωνία</h1>
+                    <p class="lead"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 class="text-center">Επικοινωνία</h1>
+        <div class="row p-3">
+            <div class="col-md-6 border-right text-center">
+                <h3 class="p-3">Στοιχεία Επικοινωνίας</h2>
+                    <div>
+                        <p>Διεύθυνση: Ιωάννου Καραντάνη 69, Μοσχάτο</p>
+                        <p>Τηλέφωνο: +30 210 6957000</p>
+                        <p>Email: info@corrport.gr</p>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center p-3">Φόρμα Επικοινωνίας</h3>
+                <p>Έχετε κάποια απορία; Ενδιαφέρεστε για κάποια πιθανή συνεργασία; Στείλτε μας το μήνυμα σας!</p>
+                <form>
+                    <div class="form-group">
+                        <label for="mail"><strong>Διεύθυνση e-mail</strong></label>
+                        <input type="email" class="form-control" id="mail" placeholder="Διεύθυνση ηλεκτρονικού ταχυδρομείου">
+                    </div>
+                    <div class="form-group">
+                        <label for="name"><strong>Όνομα</strong></label>
+                        <input type="text" class="form-control" id="name" placeholder="Όνομα">
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><strong>Το μήνυμα σας</strong></label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-secondary">Αποστολή</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by CorpPort</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for login-->
+        <div class="modal fade" role="dialog" id="loginModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Συνδεθείτε!</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="p-3">
+                        <div class="modal-body">
+
+                            <div class="form-group input-group">
+                                <input type="text" name="username" class="form-control" placeholder="Username" id="username">
+                            </div>
+                            <div class="form-group input-group">
+                                <input type="password" name="password" class="form-control" placeholder="Password" id="pass">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <a href='#' class="text-dark" id="icon-click">
+                                            <i class="fas fa-eye" id="icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Δεν έχεις λογιαριασμό; Κάνε εγγραφή <a href="register.html">εδώ</a>!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a><button type="button" class="btn btn-success">Σύνδεση</button></a>
+                        </div>
+                        <div id='login-foot'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Scripts space-->
+        <script src="script/login-button.js"></script>
+
+</body>
