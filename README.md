@@ -5,8 +5,8 @@ Semester project on Web Technologies ece upatras.
 1)	Εγκατάσταση της MongoDB από https://www.mongodb.com/try/download/compass  
 2)	Εγκατάσταση του NodeJS από https://nodejs.org/en/download/  
 3)	Ανοίξτε το bash και  
-a.	`git clone <repo>`     
-b.	`cd <repo>`      
+a.	`git clone https://github.com/mageirakos/web_ece_upatras.git`     
+b.	`cd web_ece_upatras`      
 c.	`npm install`    
 
 
