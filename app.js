@@ -15,8 +15,6 @@ const auth = require('./config/auth')
 
 app.use(express.json({ extended: true }))
 
-
-
 // Cookie parser
 const cookieParser = require('cookie-parser')
 app.use(cookieParser());
@@ -31,6 +29,7 @@ app.use('/api/user', auth, require('./routes/users'))
 app.use('/api/routes', require('./routes/routes'))
 app.use('/api/news', require('./routes/news'))
 app.use('/api/stops', require('./routes/stops'))
+app.use('/api/contact',require('./routes/contact'))
 
 const PORT = process.env.PORT || 3000;
 

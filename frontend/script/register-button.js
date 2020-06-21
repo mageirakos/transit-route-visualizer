@@ -19,7 +19,7 @@ $(document).ready(function() {
                 contentType: "application/json",
                 data: JSON.stringify(data),
                 success: function(response) {
-                    window.location.replace("/login.html");
+                    window.location.replace("/login");
                 },
                 error: function(response) {
                     showMessage(response.responseJSON.message);

@@ -11,7 +11,7 @@ $(document).ready(function() {
             contentType: "application/json",
             data: JSON.stringify(data),
             success: function(response) {
-                window.location.replace("/index_when_login.html");
+                window.location.replace("/index_when_login");
             },
             error: function() {
                 showMessage("Wrong username or password");
