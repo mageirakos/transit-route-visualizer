@@ -2,17 +2,17 @@ const mongoose = require('mongoose')
 
 const MultiLineStringSchema = new mongoose.Schema({
     type: {
-      type: String,
-      enum: ['MultiLineString'],
-      required: true,
-      default: 'MultiLineString'
+        type: String,
+        enum: ['MultiLineString'],
+        required: true,
+        default: 'MultiLineString'
     },
     coordinates: {
-      // purposefully left not [[[Number]]]
-      type: [],
-      required: true
+        // purposefully left not [[[Number]]]
+        type: [],
+        required: true
     }
-  });
+});
 
 const RouteSchema = new mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
@@ -24,7 +24,7 @@ const RouteSchema = new mongoose.Schema({
         onestop_id: String,
         created_at: String,
         updated_at: String,
-        tags:{
+        tags: {
             route_color: String,
             route_long_name: String,
             route_text_color: String
@@ -33,7 +33,7 @@ const RouteSchema = new mongoose.Schema({
         name: String,
         vehicle_type: String,
         color: String,
-        stops_served_by_route:[{
+        stops_served_by_route: [{
             stop_onestop_id: String,
             stop_name: String
         }],
@@ -41,17 +41,15 @@ const RouteSchema = new mongoose.Schema({
         operated_by_name: String,
         whellchair_accessible: String,
         bikes_allowed: String,
-        route_stop_patterns_by_onestop_id:{
+        route_stop_patterns_by_onestop_id: {
             type: [String]
         },
-        type:{
+        type: {
             type: String,
             default: "Feature"
         },
         id: String
     }
-    },
-    {collection: 'routes'}
-);
+}, { collection: 'routes' });
 
 module.exports = mongoose.model('Routes', RouteSchema)

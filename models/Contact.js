@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
 
 const ContactSchema = mongoose.Schema({
-    //_id: mongoose.Schema.Types.ObjectId,
     mail: {
         type: String,
         required: true

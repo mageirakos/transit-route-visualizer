@@ -20,11 +20,11 @@ function renderNews(jsonData) {
     for (article in jsonData) {
         const title = jsonData[article].title
         const body = jsonData[article].body
-        let date = new Date (jsonData[article].dateAuthored)        
-        date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() +" " +date.getHours() +":"+ date.getMinutes();
-        
+        let date = new Date(jsonData[article].dateAuthored)
+        date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
 
-        
+
+
         var first_Div = document.createElement("div");
         var second_Div = document.createElement("div");
         var title_h5 = document.createElement("h5")

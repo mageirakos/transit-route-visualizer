@@ -5,7 +5,6 @@ const News = require('../models/News')
 
 router.get('/', async(req, res) => {
     News.find().exec().then(data => {
-            //console.log(data);
             res.status(200).json(data);
         })
         .catch(err => {

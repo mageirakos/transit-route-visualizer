@@ -4,9 +4,11 @@ const path = require('path')
 
 //Express init
 const app = express()
-    //Env variables import
+
+//Env variables import
 require('dotenv').config()
-    //for Cors
+
+//for Cors
 const cors = require('cors');
 const db = require('./db')
 app.use(cors());
@@ -29,7 +31,7 @@ app.use('/api/user', auth, require('./routes/users'))
 app.use('/api/routes', require('./routes/routes'))
 app.use('/api/news', require('./routes/news'))
 app.use('/api/stops', require('./routes/stops'))
-app.use('/api/contact',require('./routes/contact'))
+app.use('/api/contact', require('./routes/contact'))
 
 const PORT = process.env.PORT || 3000;
 

@@ -5,7 +5,6 @@ const Route = require('../models/Route')
 router.get('/:onestopId', async(req, res) => {
     try {
         const route = await Route.find({ 'properties.onestop_id': req.params.onestopId })
-            // route[0] dioti gurnaei lista me 1 item gia kapio logo adi gia mono to 1 item
         res.json(route[0]);
     } catch (err) {
         res.json({ error: err });

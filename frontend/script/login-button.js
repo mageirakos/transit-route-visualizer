@@ -17,9 +17,7 @@ $(document).ready(function() {
                 showMessage("Wrong username or password");
             }
         });
-    }); // missing end of statement.
-
-
+    });
     $(".icon-click").click(function() {
         $("#icon").toggleClass("fa-eye-slash");
 
@@ -40,9 +38,6 @@ function showMessage(message) {
     d.className = "alert alert-warning alert-dismissible fade show";
     d.setAttribute("role", "alert");
 
-    // var stng = document.createElement("strong");
-    // stng.textContent = "Holy guacamole!";
-    // console.log('message HERE ', message)
     var txt = document.createTextNode(message);
 
     var btn = document.createElement("button");
@@ -56,7 +51,6 @@ function showMessage(message) {
     spn.textContent = 'x'
 
     btn.appendChild(spn);
-    // d.appendChild(stng);
     d.appendChild(txt);
     d.appendChild(btn);
     modalFooter.appendChild(d);

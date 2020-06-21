@@ -4,21 +4,6 @@ const router = express.Router()
 
 const Stop = require('../models/Stops')
 
-
-// router.get('/', async(req, res) => {
-//     Stop.find().exec().then(data => {
-//             //console.log(data);
-//             res.status(200).json(data);
-//         })
-//         .catch(err => {
-//             console.log(err);
-//             res.status(500).json({
-//                 error: err
-//             });
-//         });
-// });
-
-
 router.get('/:stopId', async(req, res) => {
     try {
         const stop = await Stop.findById(req.params.stopId);
@@ -28,7 +13,7 @@ router.get('/:stopId', async(req, res) => {
     }
 });
 
-// /stops-within/100/center/37.822039,23.802574
+// /stops-within/100/center/37.822039,23.802574/rout/:someId
 router.get('/stops-within/:distance/center/:latlng/route/:route_onestop_id', async(req, res) => {
     try {
         const { distance, latlng, route_onestop_id } = req.params;

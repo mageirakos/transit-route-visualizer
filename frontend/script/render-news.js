@@ -25,17 +25,3 @@ button.addEventListener("click", function() {
     });
     console.log(theList.length);
 });
-
-// theList.addEventListener("click", function(event){
-//     if(event.target.nodeName !== 'LI'){
-//         return;
-//     }
-//     else{
-//         if (this.style.textDecoration == ""){
-//             this.style.textDecoration = "line-through"; 
-//         }
-//         else{
-//             this.style.textDecoration = ""; 
-//         }
-//     }  
-// });

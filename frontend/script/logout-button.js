@@ -11,5 +11,5 @@ $(document).ready(function() {
                 showMessage(response.responseJSON.message);
             }
         });
-    }); // missing end of statement.
+    });
 });

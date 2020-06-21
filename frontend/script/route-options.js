@@ -5,7 +5,6 @@ fetch("http://localhost:3000/api/routes/type/bus")
     .then(response => response.json())
     .then((jsonData) => {
         // jsonData is parsed json object received from url
-        // console.log(jsonData)
         constructList(jsonData)
     })
     .catch((error) => {

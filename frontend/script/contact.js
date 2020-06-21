@@ -6,31 +6,28 @@ let errorBox = document.getElementById("errorBox")
 
 button.addEventListener("click", validateData);
 
-function validateData(){
+function validateData() {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if(re.test(String(email.value).toLowerCase())===false){
+    if (re.test(String(email.value).toLowerCase()) === false) {
         postError("Λάθος διεύθυνση e-mail. Παρακαλώ επιβεβαιώστε την.")
-    }
-    else{
-        errorBox.innerHTML="";
-        if(name.value===""){
+    } else {
+        errorBox.innerHTML = "";
+        if (name.value === "") {
             postError("Παρακαλώ εισάγετε το όνομα σας!")
-            
-        }
-        else{
-            errorBox.innerHTML="";
-            if(message.value===""){
+
+        } else {
+            errorBox.innerHTML = "";
+            if (message.value === "") {
                 postError("Παρακαλώ εισάγετε το μήνυμα σας!")
-            }
-            else{
-                errorBox.innerHTML="";
+            } else {
+                errorBox.innerHTML = "";
                 postData();
             }
         }
     }
 }
 
-function postData(){
+function postData() {
     const data = {
         mail: email.value,
         name: name.value,
@@ -56,11 +53,11 @@ function postData(){
 }
 
 
-function postError(text){
-    errorBox.innerHTML="";
+function postError(text) {
+    errorBox.innerHTML = "";
     let error = document.createElement("div")
     let errorText = document.createTextNode(text);
     error.appendChild(errorText);
-    error.setAttribute("class","alert alert-danger p-3");
+    error.setAttribute("class", "alert alert-danger p-3");
     errorBox.appendChild(error);
 }

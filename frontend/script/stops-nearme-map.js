@@ -52,9 +52,6 @@ function initMap() {
 
         $.getJSON(url, function(data) {
             var feature = map.data.addGeoJson(data);
-            // make sure that we are now centered around the route that is displayed
-            // map.setCenter(feature[0].getGeometry().getAt(0).getAt(10));
-            // map.setZoom(13);
         });
 
         map.data.addListener('click', function(event) {

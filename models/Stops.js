@@ -2,17 +2,17 @@ const mongoose = require('mongoose')
 
 const PointSchema = new mongoose.Schema({
     type: {
-      type: String,
-      enum: ['Point'],
-      required: true,
-      default: 'Point'
+        type: String,
+        enum: ['Point'],
+        required: true,
+        default: 'Point'
     },
     coordinates: {
-      // purposefully left not [[[Number]]]
-      type: [Number],
-      required: true
+        // purposefully left not [[[Number]]]
+        type: [Number],
+        required: true
     }
-  });
+});
 
 const StopSchema = new mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
@@ -24,7 +24,7 @@ const StopSchema = new mongoose.Schema({
         onestop_id: String,
         created_at: String,
         updated_at: String,
-        tags:{
+        tags: {
             stop_desc: String,
             osm_way_id: String
         },
@@ -32,13 +32,13 @@ const StopSchema = new mongoose.Schema({
         name: String,
         timezone: String,
         osm_way_id: Number,
-        served_by_vehicle_types:{
+        served_by_vehicle_types: {
             type: [String]
         },
         parent_stop_onestop_id: mongoose.Schema.Types.Mixed,
         wheelchair_boarding: mongoose.Schema.Types.Mixed,
         geometry_reversegeo: mongoose.Schema.Types.Mixed,
-        geometry_centroid:{
+        geometry_centroid: {
             type: PointSchema
         },
         operators_serving_stop: [{
@@ -58,12 +58,10 @@ const StopSchema = new mongoose.Schema({
         },
         id: String
     }
-    },
-    {collection: 'stops'}
-);
+}, { collection: 'stops' });
 
 //Index
-StopSchema.index({ 'geometry.coordinates': '2Dsphere'});
+StopSchema.index({ 'geometry.coordinates': '2Dsphere' });
 
 
 module.exports = mongoose.model('Stops', StopSchema)
