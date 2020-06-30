@@ -12,7 +12,8 @@ c.	`npm install`
 
 ### Setup the database:   
 1)	Σε ένα terminal γράψτε  ` mongod` για να ανοίξει ένα mongo server    
-2)	Σε ένα άλλο terminal μεταφερθείτε στο directory της εγκατάστασης του repository και  
+2)  Πρέπει να έχετε φτιάξει έναν path της μοφρφής /data/db ιδανικά στο root directory
+3)	Σε ένα άλλο terminal μεταφερθείτε στο directory της εγκατάστασης του repository και  
     -	`mongorestore --db bus_ece  /dump/bus_ece`    
 
 * Σημείωση: Πιθανόν να πρέπει να γίνει εγκατάσταση των database tools: https://www.mongodb.com/try/download/database-tools
