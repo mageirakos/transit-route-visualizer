@@ -28,9 +28,9 @@ app.use('/', require('./routes/frontend_routes'))
 // backend
 app.use('/api/users', require('./routes/index'))
 app.use('/api/user', auth, require('./routes/users'))
-app.use('/api/routes', require('./routes/routes'))
-app.use('/api/news', require('./routes/news'))
-app.use('/api/stops', require('./routes/stops'))
+app.use('/api/routes', auth, require('./routes/routes'))
+app.use('/api/news', auth, require('./routes/news'))
+app.use('/api/stops', auth, require('./routes/stops'))
 app.use('/api/contact', require('./routes/contact'))
 
 const PORT = process.env.PORT || 3000;
