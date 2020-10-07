@@ -5,7 +5,7 @@ Semester project on Web Technologies ece upatras.
 1)	Install MongoDB : https://docs.mongodb.com/manual/administration/install-community/
 2)	Install NodeJS : https://nodejs.org/en/download/  
 3)	Open bash and  
-a.	`git clone https://github.com/mageirakos/web_ece_upatras.git`     
+a.	`git clone https://github.com/mageirakos/transit-route-visualizer.git`     
 b.	`cd web_ece_upatras`      
 c.	`npm install`    
 
