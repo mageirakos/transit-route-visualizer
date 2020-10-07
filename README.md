@@ -1,28 +1,28 @@
 # bus-ece-upatras
 Semester project on Web Technologies ece upatras.  
   
-## Οδηγείες εγκατάστασης  
-1)	Εγκατάσταση της MongoDB από https://docs.mongodb.com/manual/administration/install-community/
-2)	Εγκατάσταση του NodeJS από https://nodejs.org/en/download/  
-3)	Ανοίξτε το bash και  
+## Installation  
+1)	Install MongoDB : https://docs.mongodb.com/manual/administration/install-community/
+2)	Install NodeJS : https://nodejs.org/en/download/  
+3)	Open bash and  
 a.	`git clone https://github.com/mageirakos/web_ece_upatras.git`     
 b.	`cd web_ece_upatras`      
 c.	`npm install`    
 
 
 ### Setup the database:   
-1)	Σε ένα terminal γράψτε  ` mongod` για να ανοίξει ένα mongo server    
-2)  Πρέπει να έχετε φτιάξει ένα path της μοφρφής `/data/db` ιδανικά στο root directory
-3)	Σε ένα άλλο terminal μεταφερθείτε στο directory της εγκατάστασης του repository και  
+1)	To open a mongo server write  ` mongod` on a terminal
+2)  You need to have created a path `/data/db` somewhere under the root directory
+3)	In a different terminal move to the repository installation directory and
     -	`mongorestore --db bus_ece  /dump/bus_ece`    
 
-* Σημείωση: Πιθανόν να πρέπει να γίνει εγκατάσταση των database tools: https://www.mongodb.com/try/download/database-tools
-* Επίσης πρέπει τα /bin folders του Mongo Community Server και των database Tools να είναι στο PATH σας
+* Note: You might have to install database tools to run mongorestore: https://www.mongodb.com/try/download/database-tools
+* Any `/bin` folders of Mongo Community Server and the database tools need to be on the PATH
   
 
 ## Deployment   
-1)	Σιγουρευτείτε ότι η βάση έχει εγκατασταθεί σωστά ελέγχοντας μέσω του MongoDB Compass τα περιεχόμενα. (να το κάνατε install optinally καθώς κατεβάζατε το community server)
-2)	Σιγουρευτείτε ότι ο server της βάσης είναι ανοικτός έχοντας γράφει `mongod` σε κάποιο terminal   
-3)	Στο directory του repo γράψτε `node app.js`  σε ένα terminal    
-4)	Μεταφερθείτε στο localhost:3000  
+1) Make sure that the database has been correctly installed by checking is through the MongoDB Compaass. ( Installed optionally as you are downloading the community server)
+2) Make sure your server is up and running
+3) Move over to the repo directory and `node app.js` on the terminal    
+4) GOTO localhost:3000  
 
