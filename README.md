@@ -1,12 +1,5 @@
 # Transit Route Visualizer
 Bus route visualizer utilizing the open source data of [OASA](http://geodata.gov.gr/en/dataset/oasa) the Athens,Greece public bus company.  
-Website of a pseudo-company (CorpPort) offering bus rides to customers, closest station and route visualizations and member authentication/login features.
-
-
-![close stations](./docs/img/demo.gif)
-
-# Transit Route Visualizer
-Bus route visualizer utilizing the open source data of [OASA](http://geodata.gov.gr/en/dataset/oasa) the Athens,Greece public bus company.  
 Website of a pseudo-company (CorpPort) offering bus rides to customers, closest station and route visualizations and member authentication/login features.  
 **Front page (after login)**
 ![frontpage](./docs/frontpage.png)
